@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 import NotFoundPage from "../features/foundation/NotFoundPage.vue";
 import DashboardPage from "../features/dashboard/DashboardPage.vue";
 const OrdersPage = () => import("../features/orders/OrdersPage.vue");
@@ -6,7 +6,7 @@ const CustomersPage = () => import("../features/customers/CustomersPage.vue");
 const SettingsPage = () => import("../features/settings/SettingsPage.vue");
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes: [
     { path: "/", redirect: "/dashboard" },
     ...[

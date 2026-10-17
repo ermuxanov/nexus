@@ -38,6 +38,10 @@ export default {
     document.body.style.overflow = "";
   },
   methods: {
+    skipToContent() {
+      this.$refs.main?.focus();
+      this.$refs.main?.scrollIntoView();
+    },
     toggleTheme() {
       appearanceStore.toggleTheme();
     },
@@ -83,7 +87,7 @@ export default {
 </script>
 <template>
   <div class="app-shell" :class="{ 'is-collapsed': appearance.collapsed, 'is-mobile-open': mobileOpen }">
-    <a class="skip-link" href="#main-content">Skip to content</a>
+    <a class="skip-link" href="#main-content" @click.prevent="skipToContent">Skip to content</a>
     <div v-if="mobileOpen" class="sidebar-backdrop" aria-hidden="true" @click="closeMobile()" />
     <aside
       id="main-sidebar"
