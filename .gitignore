@@ -1,0 +1,31 @@
+# Dependencies and generated output
+node_modules/
+dist/
+.nuxt-ui/
+
+# Documentation, review notes, and portfolio artifacts
+*.[mM][dD]
+/artifacts/
+
+# Local agent and editor files
+/.codex/
+/.agents/
+/.idea/
+/.vscode/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+*.local
+
+# Logs, temporary files, and operating system metadata
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+Desktop.ini

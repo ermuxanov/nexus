@@ -1,0 +1,72 @@
+.order-dialog-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 54;
+  background: rgb(0 0 0 / 60%);
+}
+.order-dialog {
+  position: fixed;
+  z-index: 55;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  translate: none;
+  display: flex;
+  flex-direction: column;
+  width: min(760px, calc(100vw - 32px));
+  max-width: none;
+  max-height: calc(100dvh - 32px);
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--control-border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  font-family: var(--font-family-sans);
+  overflow: hidden;
+}
+.order-dialog-header {
+  display: flex;
+  flex-shrink: 0;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px;
+  border-bottom: 1px solid var(--border);
+}
+.order-dialog-title {
+  font-size: var(--font-size-section);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--tracking-section);
+}
+.order-dialog-description {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: var(--font-size-label);
+}
+.order-dialog-body {
+  overflow-y: auto;
+  min-height: 0;
+  padding: 20px;
+}
+.order-dialog-footer {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px 20px;
+  border-top: 1px solid var(--border);
+}
+@media (max-width: 600px) {
+  .order-dialog {
+    width: calc(100vw - 16px);
+    max-height: calc(100dvh - 16px);
+  }
+  .order-dialog-header,
+  .order-dialog-body {
+    padding: 16px;
+  }
+  .order-dialog-footer {
+    padding: 12px 16px;
+  }
+}

@@ -1,0 +1,39 @@
+// Fontsource Inter 5.3.0, Latin variable weight axis; license beside the asset.
+// Only this local face is requested at runtime; other scripts use system fallbacks.
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../assets/fonts/inter-latin-wght-normal.woff2") format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  --font-family-sans: "Inter", "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-size-page: 28px;
+  --font-size-page-mobile: 26px;
+  --font-size-kpi: 32px;
+  --font-size-kpi-mobile: 28px;
+  --font-size-section: 16px;
+  --font-size-body: 14px;
+  --font-size-label: 13px;
+  --font-size-meta: 12px;
+  --font-size-total: 22px;
+  --font-size-total-mobile: 20px;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --tracking-body: 0;
+  --tracking-page: -0.035em;
+  --tracking-kpi: -0.04em;
+  --tracking-section: -0.02em;
+  --tracking-uppercase: 0.06em;
+  --line-body: 1.5;
+  --line-title: 1.2;
+  --line-kpi: 1.15;
+  --line-compact: 1.4;
+}
